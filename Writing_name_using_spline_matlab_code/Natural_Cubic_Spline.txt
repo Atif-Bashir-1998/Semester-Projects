@@ -73,19 +73,6 @@ A
 
 
 
-% Checked the order of the matrices
-% size(a)
-% size(b)
-% size(c)
-% size(d)
-
-% % 
-%  output_x = zeros(1,100*(length(a)-1));
-%  output_y = zeros(1,100*(length(a)-1));
-% 
-% output_x = [];
-% output_y = [];
-
 for i = 1:(length(d)-1)
     [output_x,output_y]= poly_gen(X(i),a(1,i),b(1,i),c(1,i),d(1,i),X(i),X(i+1));
     scatter (output_x,output_y ,'r','.'); hold on;
