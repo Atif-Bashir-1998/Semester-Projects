@@ -1,0 +1,9 @@
+function [x,y] = poly_gen (X,a,b,c,d,start,finish)
+  x = linspace (start,finish,1000);
+  y = [];
+  for i = 1 : length(x)
+      
+      y(i) = a*(1) + b*(x(i)-X) + c*(x(i)-X)*(x(i)-X) + d*(x(i)-X)*(x(i)-X)*(x(i)-X);
+  end
+  
+end
